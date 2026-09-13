@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso IA Básico-Intermedio - LD SmartLab</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/ai-course.css">
+</head>
+<body>
+<div class="container" id="app">
+    <div class="header">
+        <h1 id="mainTitle">🧠 Curso de IA - Día 1</h1>
+        <div class="header-actions">
+            <span class="badge" id="badgeLevel">Básico-Intermedio</span>
+            <span class="slide-counter" id="slideCounter">1 / 1</span>
+            <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i> <span id="themeLabel">Oscuro</span></button>
+        </div>
+    </div>
+    <div class="slide-content" id="slideContent"></div>
+    <div class="navigation">
+        <div class="nav-buttons">
+            <button id="prevBtn">◀ Anterior</button>
+            <button id="nextBtn" class="primary">Siguiente ▶</button>
+        </div>
+        <div class="nav-buttons">
+            <button id="indexBtn" class="index-btn">📋 Índice</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal-overlay" id="indexModal">
+    <div class="modal-box">
+        <h3 id="modalTitle">📋 Índice - Curso IA</h3>
+        <div id="indexList"></div>
+        <button class="close-modal" id="closeModalBtn">Cerrar</button>
+    </div>
+</div>
+
+<script src="../js/data/ia.js"></script>
+<script src="../js/ai-engine.js"></script>
+</body>
+</html>

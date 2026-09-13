@@ -1,0 +1,15 @@
+<div class="course-selector" id="courseSelector"></div>
+<style>:root { --primary-color: #2e86de; --primary-hover: #1a6fb5; --accent-color: #e67e22; --accent-hover: #ca6f1e; }</style>
+...
+<script src="../js/data/word.js"></script>
+<script src="../js/presentation-engine.js"></script>
+<script>
+  PresentationEngine.init({
+    title: 'Word',
+    emoji: '📘',
+    levels: {
+      basico:     { label: 'Básico',     emoji: '📘', slides: CURSO_WORD_BASICO },
+      intermedio: { label: 'Intermedio', emoji: '📙', slides: CURSO_WORD_INTERMEDIO }
+    }
+  });
+</script>

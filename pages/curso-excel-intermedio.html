@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Excel Intermedio - LD SmartLab</title>
+    <link rel="stylesheet" href="../css/presentation.css">
+    <style>
+        :root {
+            --primary-color: #2ecc71;
+            --primary-hover: #27ae60;
+            --accent-color: #27ae60;
+            --accent-hover: #1e8449;
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation-container" id="app">
+        <div class="course-selector" id="courseSelector" hidden></div>
+
+        <div class="header">
+            <h1 id="mainTitle"></h1>
+            <div>
+                <span class="badge badge-basico" id="badgeLevel"></span>
+                <span class="slide-counter" id="slideCounter"></span>
+            </div>
+        </div>
+
+        <div class="slide-content" id="slideContent"></div>
+
+        <div class="navigation">
+            <div class="nav-buttons">
+                <button id="prevBtn">◀ Anterior</button>
+                <button id="nextBtn" class="primary">Siguiente ▶</button>
+            </div>
+            <div class="nav-buttons">
+                <button id="indexBtn" class="index-btn">📋 Índice</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="indexModal">
+        <div class="modal-box">
+            <h3 id="modalTitle">📋 Índice</h3>
+            <div id="indexList"></div>
+            <button class="close-modal" id="closeModalBtn">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="../js/data/excel-intermedio.js"></script>
+    <script src="../js/presentation-engine.js"></script>
+    <script>
+        PresentationEngine.init({
+            title: 'Excel Intermedio',
+            emoji: '📗',
+            levels: {
+                basico: { label: 'Intermedio', emoji: '📗', slides: CURSO_EXCEL_INTERMEDIO }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Word Básico-Intermedio - LD SmartLab</title>
+    <link rel="stylesheet" href="../css/presentation.css">
+    <style>
+        :root {
+            --primary-color: #2e86de;
+            --primary-hover: #1a6fb5;
+            --accent-color: #e67e22;
+            --accent-hover: #ca6f1e;
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation-container" id="app">
+        <div class="course-selector" id="courseSelector"></div>
+
+        <div class="header">
+            <h1 id="mainTitle"></h1>
+            <div>
+                <span class="badge badge-basico" id="badgeLevel"></span>
+                <span class="slide-counter" id="slideCounter"></span>
+            </div>
+        </div>
+
+        <div class="slide-content" id="slideContent"></div>
+
+        <div class="navigation">
+            <div class="nav-buttons">
+                <button id="prevBtn">◀ Anterior</button>
+                <button id="nextBtn" class="primary">Siguiente ▶</button>
+            </div>
+            <div class="nav-buttons">
+                <button id="indexBtn" class="index-btn">📋 Índice</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="indexModal">
+        <div class="modal-box">
+            <h3 id="modalTitle">📋 Índice</h3>
+            <div id="indexList"></div>
+            <button class="close-modal" id="closeModalBtn">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="../js/data/word.js"></script>
+    <script src="../js/presentation-engine.js"></script>
+    <script>
+        PresentationEngine.init({
+            title: 'Word',
+            emoji: '📘',
+            levels: {
+                basico:     { label: 'Básico',     emoji: '📘', slides: CURSO_WORD_BASICO },
+                intermedio: { label: 'Intermedio', emoji: '📙', slides: CURSO_WORD_INTERMEDIO }
+            }
+        });
+    </script>
+</body>
+</html>

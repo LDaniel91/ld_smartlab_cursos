@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LD SmartLab - Cursos de Idiomas Profesionales</title>
+    <link rel="stylesheet" href="../css/languages.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo"><div class="logo-icon">🎓</div><span>LD SmartLab</span></div>
+    <button class="theme-toggle" id="themeToggle">🌙 Oscuro</button>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>🌍 Cursos de Idiomas Profesionales</h1>
+  <p>Aprende 7 idiomas con contenido real, diálogos contextualizados, notas culturales y autoevaluación interactiva.</p>
+</section>
+
+<main class="container">
+  <div class="controls">
+    <div class="control-group">
+      <label for="langSelect">Idioma</label>
+      <select id="langSelect"></select>
+    </div>
+    <div class="control-group">
+      <label for="levelSelect">Nivel</label>
+      <select id="levelSelect">
+        <option value="basico">Básico (A1-A2)</option>
+        <option value="intermedio">Intermedio (B1)</option>
+      </select>
+    </div>
+    <div class="control-group">
+      <label for="lessonSelect">Lección</label>
+      <select id="lessonSelect"></select>
+    </div>
+  </div>
+  <div id="lessonContainer">
+    <div class="welcome">
+      <div class="welcome-icon">📚</div>
+      <h2>¡Bienvenido a LD SmartLab!</h2>
+      <p>Selecciona un idioma, nivel y lección para comenzar tu aprendizaje.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 LD SmartLab · Diseñado por Luis Daniel Ramos Corona · Plataforma educativa de idiomas</p>
+</footer>
+
+<script src="../js/data/idiomas.js"></script>
+<script src="../js/languages-engine.js"></script>
+</body>
+</html>
