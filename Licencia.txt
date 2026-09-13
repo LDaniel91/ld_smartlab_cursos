@@ -1,0 +1,222 @@
+
+---
+
+# 📄 index.html
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LD SmartLab - Cursos de Informática, Ofimática, IA e Idiomas</title>
+    <meta name="description" content="Cursos prácticos de informática, ofimática, inteligencia artificial e idiomas con LD SmartLab.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/img/logo.png" alt="LD SmartLab Logo">
+                LD SmartLab
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="#cursos">Cursos</a>
+                <a href="#about">Nosotros</a>
+                <a href="#testimonios">Reseñas</a>
+                <a href="#contacto">Contacto</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                    <i class="fas fa-moon"></i> <span id="themeLabel">Oscuro</span>
+                </button>
+                <a href="#cursos" class="btn-nav"><i class="fas fa-rocket"></i> Empezar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>Aprende <span>informática, ofimática e IA</span> con cursos prácticos</h1>
+                <p>Domina Excel, Word, PowerPoint, Idiomas como (Inglés, Francés, Portugués, Alemán, Ruso, Angolano), fundamentos de informática e inteligencia artificial desde cero hasta nivel intermedio. LD SmartLab te guía paso a paso.</p>
+                <div class="hero-buttons">
+                    <a href="#cursos" class="btn-primary"><i class="fas fa-play"></i> Ver cursos</a>
+                    <a href="#about" class="btn-secondary"><i class="fas fa-info-circle"></i> Conócenos</a>
+                </div>
+            </div>
+            <div class="hero-image fade-in delay-1">
+                <img src="assets/img/logo.png" alt="LD SmartLab" class="hero-logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CURSOS ========== -->
+    <section class="courses" id="cursos">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Nuestros Cursos</h2>
+                <p>Elige el curso que necesites y comienza a aprender hoy mismo. Todos incluyen teoría, ejemplos y ejercicios.</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card fade-in delay-1">
+                    <div class="icon"><i class="fas fa-file-excel"></i></div>
+                    <h3>Excel Básico</h3>
+                    <p>Domina las hojas de cálculo desde cero: fórmulas, formato, gráficos y más.</p>
+                    <a href="pages/curso-excel-basico.html" class="btn-card" target="_blank"><i class="fas fa-external-link-alt"></i> Ir al curso</a>
+                </div>
+                <div class="course-card fade-in delay-2">
+                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Excel Intermedio</h3>
+                    <p>Funciones lógicas, tablas dinámicas, búsquedas avanzadas y macros básicas.</p>
+                    <a href="pages/curso-excel-intermedio.html" class="btn-card" target="_blank"><i class="fas fa-external-link-alt"></i> Ir al curso</a>
+                </div>
+                <div class="course-card fade-in delay-3">
+                    <div class="icon"><i class="fas fa-file-word"></i></div>
+                    <h3>Word Básico - Intermedio</h3>
+                    <p>Desde la edición básica hasta tablas de contenido, combinación de correspondencia y macros.</p>
+                    <a href="pages/curso-word.html" class="btn-card" target="_blank"><i class="fas fa-external-link-alt"></i> Ir al curso</a>
+                </div>
+                <div class="course-card fade-in delay-4">
+                    <div class="icon"><i class="fas fa-file-powerpoint"></i></div>
+                    <h3>PowerPoint Básico - Intermedio</h3>
+                    <p>Crea presentaciones impactantes con diapositivas maestras, animaciones y multimedia.</p>
+                    <a href="pages/curso-powerpoint.html" class="btn-card" target="_blank"><i class="fas fa-external-link-alt"></i> Ir al curso</a>
+                </div>
+                <div class="course-card fade-in delay-5">
+                    <div class="icon"><i class="fas fa-desktop"></i></div>
+                    <h3>Informática Básica - Intermedia</h3>
+                    <p>Hardware, software, redes, seguridad, virtualización y automatización con scripts.</p>
+                    <a href="pages/curso-informatica.html" class="btn-card" target="_blank"><i class="fas fa-external-link-alt"></i> Ir al curso</a>
+                </div>
+                <div class="course-card fade-in delay-6">
+                    <div class="icon"><i class="fas fa-robot"></i></div>
+                    <h3>Inteligencia Artificial</h3>
+                    <p>Domina las principales herramientas de IA: DeepSeek, ChatGPT, Gemini, Copilot y más.</p>
+                    <a href="pages/curso-ia.html" class="btn-card" target="_blank"><i class="fas fa-external-link-alt"></i> Ir al curso</a>
+                </div>
+                <div class="course-card fade-in delay-6">
+                    <div class="icon"><i class="fas fa-book"></i></div>
+                    <h3>Idiomas</h3>
+                    <p>Inglés, Francés, Italiano, Portugués, Alemán, Ruso y Angolano para mejorar tu comunicación.</p>
+                    <a href="pages/curso-idiomas.html" class="btn-card" target="_blank"><i class="fas fa-external-link-alt"></i> Ir al curso</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MISIÓN, VISIÓN, OBJETIVO ========== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Misión, Visión y Objetivo</h2>
+                <p>En LD SmartLab nos apasiona la educación tecnológica accesible para todos.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-item fade-in delay-1">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Misión</h3>
+                    <p>Empoderar a las personas con habilidades digitales prácticas mediante cursos claros, estructurados y aplicables al mundo real.</p>
+                </div>
+                <div class="about-item fade-in delay-2">
+                    <i class="fas fa-eye"></i>
+                    <h3>Visión</h3>
+                    <p>Convertirnos en el referente de formación ofimática, informática e IA para hispanohablantes, con una comunidad activa y en constante aprendizaje.</p>
+                </div>
+                <div class="about-item fade-in delay-3">
+                    <i class="fas fa-flag-checkered"></i>
+                    <h3>Objetivo</h3>
+                    <p>Ofrecer cursos de calidad que permitan a cualquier persona, sin importar su nivel, dominar las herramientas tecnológicas más demandadas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIOS ========== -->
+    <section class="testimonials" id="testimonios">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Lo que dicen nuestros alumnos</h2>
+                <p>Reseñas reales de estudiantes que han transformado su carrera con nuestros cursos.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in delay-1">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"El curso de Excel intermedio me ayudó a conseguir un ascenso en mi trabajo. Las explicaciones son muy claras y los ejemplos prácticos son excelentes."</p>
+                    <div class="author">María González</div>
+                    <div class="role">Analista financiera</div>
+                </div>
+                <div class="testimonial-card fade-in delay-2">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"Nunca había entendido Word más allá de lo básico. Con el curso intermedio aprendí a hacer tablas de contenido y combinación de correspondencia. ¡Increíble!"</p>
+                    <div class="author">Carlos Ruiz</div>
+                    <div class="role">Administrativo</div>
+                </div>
+                <div class="testimonial-card fade-in delay-3">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"El curso de IA me abrió la mente. Ahora uso ChatGPT y Perplexity para mis investigaciones. Muy recomendable para estudiantes y profesionales."</p>
+                    <div class="author">Laura Fernández</div>
+                    <div class="role">Investigadora</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACTO ========== -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Envíanos tu opinión</h2>
+                <p>Déjanos tus comentarios, sugerencias o dudas. ¡Tu opinión nos ayuda a mejorar!</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info fade-in delay-1">
+                    <h3>¡Conéctate con nosotros!</h3>
+                    <p>Estamos aquí para ayudarte. Puedes escribirnos directamente a nuestro correo o llenar el formulario.</p>
+                    <div class="detail"><i class="fas fa-envelope"></i> luisdanielramoscorona@outlook.com</div>
+                    <div class="detail"><i class="fas fa-globe"></i> www.ldsmartlab.com</div>
+                    <div class="detail"><i class="fas fa-map-pin"></i> Online - Acceso desde cualquier lugar</div>
+                </div>
+                <div class="contact-form fade-in delay-2">
+                    <form action="mailto:luisdanielramoscorona@outlook.com" method="post" enctype="text/plain" onsubmit="return confirm('¿Enviar tu opinión a LD SmartLab?');">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="Nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="Correo" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tu opinión o mensaje</label>
+                            <textarea id="message" name="Mensaje" placeholder="Escribe aquí tu opinión..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Enviar opinión</button>
+                    </form>
+                    <p class="form-hint"><i class="fas fa-info-circle"></i> Al enviar, se abrirá tu cliente de correo para que confirmes el envío.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 <strong>LD SmartLab</strong> — Cursos de informática, ofimática e IA.</p>
+            <p class="footer-links">
+                <a href="mailto:luisdanielramoscorona@outlook.com">luisdanielramoscorona@outlook.com</a> ·
+                <a href="#inicio">Inicio</a> ·
+                <a href="#cursos">Cursos</a> ·
+                <a href="#contacto">Contacto</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/home.js"></script>
+</body>
+</html>
