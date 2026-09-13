@@ -1,0 +1,38 @@
+ld-smartlab/
+├── index.html
+├── README.md
+├── assets/
+│   ├── img/
+│   │   └── logo.png
+│   └── videos/                                    ← NUEVA CARPETA
+│       ├── excel-basico-video001.mp4
+│       ├── excel-basico-video002.mp4
+│       ├── excel-basico-video003.mp4
+│       ├── word-video001.mp4
+│       └── ...
+├── css/
+│   ├── home.css
+│   ├── presentation.css                           ← ACTUALIZADO
+│   ├── ai-course.css
+│   └── languages.css
+├── js/
+│   ├── home.js
+│   ├── presentation-engine.js                     ← ACTUALIZADO
+│   ├── ai-engine.js
+│   ├── languages-engine.js
+│   └── data/
+│       ├── excel-basico.js                        ← ACTUALIZADO (con galería)
+│       ├── excel-intermedio.js
+│       ├── word.js
+│       ├── powerpoint.js
+│       ├── informatica.js
+│       ├── ia.js
+│       └── idiomas.js
+└── pages/
+    ├── curso-excel-basico.html
+    ├── curso-excel-intermedio.html
+    ├── curso-word.html
+    ├── curso-powerpoint.html
+    ├── curso-informatica.html
+    ├── curso-ia.html
+    └── curso-idiomas.html
